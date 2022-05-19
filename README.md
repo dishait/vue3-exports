@@ -72,11 +72,17 @@ pnpm build-types # 仅打包类型
 
 pnpm release # 发布
 
-pnpm play # 测试 example
+pnpm play # 启动 example
 
 pnpm play:build # 打包 example
 
 pnpm play:preview # 预览 example
+
+pnpm test # 单元测试
+
+pnpm test:ui # 单元测试(ui)
+
+pnpm test:update # 单元测试(持续更新)
 ```
 
 <br />

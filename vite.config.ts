@@ -5,6 +5,7 @@ import { name } from './package.json'
 
 export default defineConfig({
 	build: {
+		emptyOutDir: false,
 		lib: {
 			name,
 			entry: './src/exports.ts',

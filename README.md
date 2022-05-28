@@ -69,6 +69,8 @@ pnpm dev # 开发
 
 pnpm build # 打包
 
+pnpm build-js # 仅打包 js
+
 pnpm build-types # 仅打包类型
 
 pnpm release # 发布

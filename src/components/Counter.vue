@@ -5,5 +5,7 @@ const [n, inc] = useInc()
 </script>
 
 <template>
-	<div @click="inc()">counter: {{ n }}</div>
+	<div @click="inc()" class="custom-color">
+		counter: {{ n }}
+	</div>
 </template>

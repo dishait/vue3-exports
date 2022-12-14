@@ -1,64 +1,64 @@
 {
-	"name": "vue3-exports",
-	"version": "0.0.0",
-	"description": "开箱即用的 vite + vue3 + vitest + ts 库模板，用来打包 vue3 的 .vue 组件与 composition-api",
-	"main": "./dist/index.umd.js",
-	"module": "./dist/index.es.js",
-	"types": "./dist/exports.d.ts",
-	"exports": {
-		".": {
-			"require": "./dist/index.umd.js",
-			"import": "./dist/index.es.js",
-			"types": "./dist/exports.d.ts"
-		}
-	},
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"dev": "vite",
-		"test": "vitest",
-		"build-js": "vite build",
-		"test:ui": "vitest --ui",
-		"test:update": "vitest -u",
-		"prepublishOnly": "npm run build",
-		"play": "pnpm -C examples/vite run dev",
-		"play:build": "pnpm -C examples/vite run build",
-		"build-types": "vue-tsc -p tsconfig.build.json",
-		"play:preview": "pnpm -C examples/vite run preview",
-		"build": "npm-run-all --parallel build-js build-types",
-		"release": "bumpp --commit --push --tag && npm publish"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/name/repo.git"
-	},
-	"keywords": [
-		"vite",
-		"vue3",
-		"component",
-		"typescript"
-	],
-	"license": "MIT",
-	"author": {
-		"name": "name",
-		"email": "xxx@xx.com",
-		"url": "https://github.com/name"
-	},
-	"devDependencies": {
-		"@types/node": "^18.0.0",
-		"@vitejs/plugin-vue": "^2.3.3",
-		"@vitest/ui": "^0.15.1",
-		"bumpp": "^8.2.1",
-		"npm-run-all": "^4.1.5",
-		"typescript": "^4.7.4",
-		"unocss": "^0.39.3",
-		"vite": "^2.9.12",
-		"vitest": "^0.15.1",
-		"vue": "^3.2.37",
-		"vue-tsc": "^0.38.1"
-	},
-	"peerDependencies": {
-		"vue": ">=3.0.0"
-	}
+  "name": "vue3-exports",
+  "version": "0.0.0",
+  "description": "开箱即用的 vite + vue3 + vitest + ts 库模板，用来打包 vue3 的 .vue 组件与 composition-api",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/exports.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.umd.js",
+      "import": "./dist/index.es.js",
+      "types": "./dist/exports.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest",
+    "build-js": "vite build",
+    "test:ui": "vitest --ui",
+    "test:update": "vitest -u",
+    "prepublishOnly": "npm run build",
+    "play": "pnpm -C examples/vite run dev",
+    "play:build": "pnpm -C examples/vite run build",
+    "build-types": "vue-tsc -p tsconfig.build.json",
+    "play:preview": "pnpm -C examples/vite run preview",
+    "build": "npm-run-all --parallel build-js build-types",
+    "release": "bumpp --commit --push --tag && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/name/repo.git"
+  },
+  "keywords": [
+    "vite",
+    "vue3",
+    "component",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "name",
+    "email": "xxx@xx.com",
+    "url": "https://github.com/name"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.15",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitest/ui": "^0.25.8",
+    "bumpp": "^8.2.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.9.4",
+    "unocss": "^0.47.6",
+    "vite": "^4.0.1",
+    "vitest": "^0.25.8",
+    "vue": "^3.2.45",
+    "vue-tsc": "^1.0.13"
+  },
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  }
 }

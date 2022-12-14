@@ -5,6 +5,7 @@ import { name } from './package.json'
 
 export default defineConfig({
 	build: {
+		cssCodeSplit: true,
 		emptyOutDir: false,
 		lib: {
 			name,
